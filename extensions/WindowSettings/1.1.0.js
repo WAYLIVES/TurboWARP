@@ -97,6 +97,10 @@
           show: "показать",
           hide: "скрыть",
         // [OPTIONSH]:
+          flag: "иконка флага",
+          pause: "иконка паузы",
+          stop: "иконка остановки",
+          fullscreen: "иконка полноэкранного режима",
     },
   }); 
 /* ________________________________________________________________________________________ */
@@ -498,7 +502,10 @@
           {
             opcode: "showHideOption",
             blockType: Scratch.BlockType.COMMAND,
-            text: " | | | |  [SHOWHIDE] [OPTIONSH]  | | | | ",
+            text: Scratch.translate({ 
+              id: "showHideOption", 
+              default: " | | | |  [SHOWHIDE] [OPTIONSH]  | | | | " 
+            }),
             arguments: {
               SHOWHIDE: {
                 type: Scratch.ArgumentType.STRING,
@@ -700,19 +707,17 @@
           SHOWHIDE: {
             acceptReporters: false,
             items: [
-              {
-                text: "S",
-                value: "show",
-              },
-              {
-                text: "H",
-                value: "hide",
-              },
+              { text: Scratch.translate({ id: "show", default: "show" }), value: "show" },
+              { text: Scratch.translate({ id: "hide", default: "hide" }), value: "hide" },
             ],
           },
           OPTIONSH: {
             acceptReporters: false,
             items: [
+              { text: Scratch.translate({ id: "thingA", default: "flag" }), value: "flag" },
+              { text: Scratch.translate({ id: "thingB", default: "interpolation" }), value: "INTERPOLATION" },
+              { text: Scratch.translate({ id: "thingC", default: "remove fencing" }), value: "REMOVE_FENCING" },
+              { text: Scratch.translate({ id: "thingD", default: "remove misc limits" }), value: "REMOVE_MISC_LIMITS" },
               {
                 text: "flag",
                 value: "flag",
