@@ -238,7 +238,7 @@
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate({ 
               id: "WindowSCWH", 
-              default: " | | |  window [MenuSC] [MenuWH]: [WH] | | | " 
+              default: " | | | |  window [MenuSC] [MenuWH]: [WH] | | | | " 
             }),
             arguments: {
               MenuSC: {
@@ -261,7 +261,7 @@
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate({ 
               id: "moveToPresets", 
-              default: " | | | move window to the [PRESETS] | | | " 
+              default: " | | | |  move window to the [PRESETS] | | | | " 
             }),
             arguments: {
               PRESETS: {
@@ -276,7 +276,7 @@
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate({ 
               id: "changeTitleTo", 
-              default: " | | | set window title to [TITLE] | | | " 
+              default: " | | | |  set window title to [TITLE] | | | | " 
             }),
             arguments: {
               TITLE: {
@@ -308,7 +308,7 @@
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate({ 
               id: "innerStageSize", 
-              default: " | | | inner stage size [innerMenuSetChange] width: [innerWidth] height: [innerHeight] | | | " 
+              default: " | | | |  inner stage size [innerMenuSetChange] width: [innerWidth] height: [innerHeight] | | | | " 
             }),
             arguments: {
               innerMenuSetChange: {
@@ -331,7 +331,7 @@
             blockType: Scratch.BlockType.COMMAND,
             text: Scratch.translate({ 
               id: "innerStageSizeWidthHeight", 
-              default: " | | | inner stage size [innerMenuSetChangeWH] [innerMenuWidthHeight]: [innerWidthHeight] | | | " 
+              default: " | | | |  inner stage size [innerMenuSetChangeWH] [innerMenuWidthHeight]: [innerWidthHeight] | | | | " 
             }),
             arguments: {
               innerMenuSetChangeWH: {
@@ -370,7 +370,6 @@
           
           {
             opcode: "getDimension",
-            text: " | | | stage [dimension] | | | ",
             blockType: Scratch.BlockType.REPORTER,
             text: Scratch.translate({ 
               id: "getDimension", 
