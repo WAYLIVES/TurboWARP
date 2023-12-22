@@ -101,6 +101,7 @@
           pause: "иконка паузы",
           stop: "иконка остановки",
           fullscreen: "иконка полноэкранного режима",
+      optionShown: " | | | |  [OPTION] показан?  | | | | ",
     },
   }); 
 /* ________________________________________________________________________________________ */
@@ -520,7 +521,10 @@
           {
             opcode: "optionShown",
             blockType: Scratch.BlockType.BOOLEAN,
-            text: Scratch.translate(" | | | |  [OPTION] shown?  | | | | "),
+            text: Scratch.translate({ 
+              id: "optionShown", 
+              default: " | | | |  [OPTION] shown?  | | | | " 
+            }),
             arguments: {
               OPTION: {
                 type: Scratch.ArgumentType.STRING,
@@ -688,7 +692,7 @@
             items: [
               {
                 text: Scratch.translate("green flag"),
-                value: "green flag",
+                value: "flag",
               },
               {
                 text: Scratch.translate("pause"),
@@ -714,26 +718,10 @@
           OPTIONSH: {
             acceptReporters: false,
             items: [
-              { text: Scratch.translate({ id: "thingA", default: "flag" }), value: "flag" },
-              { text: Scratch.translate({ id: "thingB", default: "interpolation" }), value: "INTERPOLATION" },
-              { text: Scratch.translate({ id: "thingC", default: "remove fencing" }), value: "REMOVE_FENCING" },
-              { text: Scratch.translate({ id: "thingD", default: "remove misc limits" }), value: "REMOVE_MISC_LIMITS" },
-              {
-                text: "flag",
-                value: "flag",
-              },
-              {
-                text: Scratch.translate("pause"),
-                value: "pause",
-              },
-              {
-                text: Scratch.translate("stop"),
-                value: "stop",
-              },
-              {
-                text: Scratch.translate("fullscreen"),
-                value: "fullscreen",
-              },
+              { text: Scratch.translate({ id: "flag", default: "flag" }), value: "flag" },
+              { text: Scratch.translate({ id: "pause", default: "pause" }), value: "pause" },
+              { text: Scratch.translate({ id: "stop", default: "stop" }), value: "stop" },
+              { text: Scratch.translate({ id: "fullscreen", default: "fullscreen" }), value: "fullscreen" },
             ],
           },
                     
