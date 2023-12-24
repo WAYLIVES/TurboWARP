@@ -690,7 +690,7 @@
             acceptReporters: true,
             items: [
               {
-                text: Scratch.translate("green flag"),
+                text: Scratch.translate("flag"),
                 value: "flag",
               },
               {
