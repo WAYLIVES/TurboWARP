@@ -1,8 +1,8 @@
 // Name: Window Settings
-// Id: RIHART
+// ID: RIHART
 // Description: Thanks to this extension, you can customize the project window (this works if you package the project in the ".exe" format).
-// Created by: RIHART (https://scratch.mit.edu/users/RIHART/)
-// V-1.1.0
+// By: RIHART <https://scratch.mit.edu/users/RIHART/>
+// Version: 1.1.1
 
 
 
