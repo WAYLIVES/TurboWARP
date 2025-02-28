@@ -5,11 +5,8 @@
 // Version: 1.1.1
 
 
-
 (function (Scratch) {
-  "use strict";
-  
-  
+  "use strict";  
 
   Scratch.translate.setup({    
     ru /*_РусскийЯзык_*/: {
@@ -91,11 +88,7 @@
     },
   }); 
   
-
-  
-  if (!Scratch.extensions.unsandboxed) {throw new Error("Error");}
-
-  
+  if (!Scratch.extensions.unsandboxed) {throw new Error("Error");}  
   
 
   // иконка меню:
@@ -106,8 +99,6 @@
   const greenFlagURI="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxNiAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zIDAuNUMzIDAuMjIzODU4IDIuNzc2MTQgMCAyLjUgMEgxLjVDMC42NzE1NzMgMCAwIDAuNjcxNTczIDAgMS41VjE4LjVDMCAxOS4zMjg0IDAuNjcxNTczIDIwIDEuNSAyMFYyMEMyLjMyODQzIDIwIDMgMTkuMzI4NCAzIDE4LjVWMTVDMyAxMy44OTU0IDMuODk1NDMgMTMgNSAxM0gxNEMxNS4xMDQ2IDEzIDE2IDEyLjEwNDYgMTYgMTFWM0MxNiAxLjg5NTQzIDE1LjEwNDYgMSAxNCAxSDMuNUMzLjIyMzg2IDEgMyAwLjc3NjE0MiAzIDAuNVYwLjVaIiBmaWxsPSIjMTgxRDBEIi8+Cjwvc3ZnPgo=";
 
   
-
-
   const TURBO_MODE = "turbo mode";
   const INTERPOLATION = "interpolation";
   const REMOVE_FENCING = "remove fencing";
@@ -158,21 +149,12 @@
         }
       });
     }
-  }
-
-
-
-  
+  }  
   class lmsmcutils {
     getInfo() {
       return {              
         id: "WindowSettings",
         name: Scratch.translate({ id: "ExtensionName", default: "Window Settings" }),
-        /*
-        color1: "#5D607A",
-        color2: "#536E8E",
-        color3: "#1F202C",
-        */
         color1: "#5671B7",
         color2: "#4B6095",
         color3: "#2D3548",
@@ -505,12 +487,9 @@
               },
             },
           },
-          "---",
-          
+          "---",          
           
         ],
-
-
 
         
         menus: {
@@ -626,9 +605,6 @@
             ],
           },
 
-
-
-
           thing: {
             acceptReporters: false,
             items: [
@@ -653,8 +629,6 @@
               },
             ],
           },
-
-
 
           OPTION: {
             acceptReporters: true,
@@ -697,9 +671,6 @@
         },
       };
     }
-
-
-
     
     getDimension({ dimension }) {
       if (dimension === "width") {
@@ -709,7 +680,6 @@
       }
       return 0;
     }
-
 
     setDimensions({ width, height }) {
       width = Scratch.Cast.toNumber(width);
@@ -763,9 +733,7 @@
       }
       Scratch.vm.runtime.requestRedraw();
     }
-    
-
-    
+        
     moveToPresets(args) {
       if (args.PRESETS == "center") {
         const left = (screen.width - window.outerWidth) / 2;
@@ -800,7 +768,6 @@
       }
       Scratch.vm.runtime.requestRedraw();
     }
-
 
     WindowWHXY(args) {
       if (args.MenuWindowWHXY == "Width") {
@@ -960,11 +927,7 @@
         return fullScreen.style.display !== "none";
       }
       return false;
-    }
-
-
-
-    
+    }    
   }
   Scratch.extensions.register(new lmsmcutils());
 })(Scratch);
